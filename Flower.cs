@@ -31,12 +31,8 @@ namespace Flowershop
             this.quantity = quantity;
         }
 
-        public void Display()
-        {
-            Console.WriteLine("Type: " + this.type);
-            Console.WriteLine("Color: " + this.color);
-            Console.WriteLine("Price: " + this.price);
-            Console.WriteLine("Quantity: " + this.quantity);
+        public void Display() {
+            Console.WriteLine(this.type + " | Color: " + this.color + " | Price: " + this.price + " RON | Quantity: " + this.quantity);
         }
     }
 }

@@ -32,5 +32,10 @@ namespace Flowershop
             this.email = email;
             this.salary = salary;
         }
+
+        public void Display()
+        {
+            Console.WriteLine("Name: " + this.name + "\t Address: " + this.address + "\t Phone: " + this.phone + "\nEmail: " + this.email + "\t Salary: " + this.salary + " RON");
+        }
     }
 }
