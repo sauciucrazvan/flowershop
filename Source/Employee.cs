@@ -35,7 +35,7 @@ namespace Flowershop
 
         public void Display()
         {
-            Console.WriteLine("Name: " + this.name + "\t Address: " + this.address + "\t Phone: " + this.phone + "\nEmail: " + this.email + "\t Salary: " + this.salary + " RON");
+            Console.WriteLine("Name: " + this.name + "\t\t Address: " + this.address + "\t Phone: " + this.phone + "\nEmail: " + this.email + "\t Salary: " + this.salary + " RON");
         }
     }
 }
