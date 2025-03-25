@@ -37,5 +37,10 @@ namespace Flowershop
         {
             Console.WriteLine("Name: " + this.name + "\t\t Address: " + this.address + "\t Phone: " + this.phone + "\nEmail: " + this.email + "\t Salary: " + this.salary + " RON");
         }
+
+        public string FileFormat()
+        {
+            return this.name + ";" + this.address + ";" + this.phone + ";" + this.email + ";" + this.salary;
+        }
     }
 }

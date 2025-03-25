@@ -7,26 +7,8 @@ namespace Flowershop
     {
         static void Main(string[] args)
         {
-            Flowershop shop = new Flowershop();
-            
-            shop.name = "PARFUMUL FLORILOR";
-            shop.address = "DN29, Dumbraveni, 727225";
-            shop.phone = "0743623234";
-
-            shop.stock = new List<Flower>
-            {
-                new Flower(FlowerTypes.Rose, "Red", 7.99, 100),
-                new Flower(FlowerTypes.Daffodil, "Yellow", 5.99, 50),
-                new Flower(FlowerTypes.Dahlia, "Black", 3.49, 200)
-            };
-            
-            shop.employees = new List<Employee>
-            {
-                new Employee("Glabert-Horel Dalan",
-                            "Homeless", "07nosimcard",
-                            "glaberthoreldalan@gmail.com",
-                            1200) //cam sarac
-            };
+            FileManagement fileManagement = new FileManagement("flowershop.txt");
+            Flowershop shop = fileManagement.LoadFlowershop();
 
             string opt;
             do
@@ -45,6 +27,9 @@ namespace Flowershop
                 Console.WriteLine();
                 switch (opt.ToUpper())
                 {
+                    case "S":
+                        fileManagement.SaveFlowershop(shop);
+                        break;
                     case "SH":
                         shop.Display();
                         Console.WriteLine();
@@ -74,6 +59,8 @@ namespace Flowershop
                         quantity = Convert.ToInt32(Console.ReadLine());
 
                         shop.AddFlower(new Flower((FlowerTypes) type, color, price, quantity));
+                        fileManagement.AddFlower(new Flower((FlowerTypes)type, color, price, quantity));
+                        Console.WriteLine();
                         Console.WriteLine("Succesfully added the new flower to the shop stock!");
                         Console.WriteLine();
                         break;
@@ -91,6 +78,8 @@ namespace Flowershop
                         salary = Convert.ToInt32(Console.ReadLine());
 
                         shop.AddEmployee(new Employee(name, address, phone, email, salary));
+                        fileManagement.AddEmployee(new Employee(name, address, phone, email, salary));
+                        Console.WriteLine();
                         Console.WriteLine("Succesfully added the new employee to the shop!");
                         Console.WriteLine();
                         break;
@@ -139,7 +128,7 @@ namespace Flowershop
                         Console.WriteLine();
                         break;
                 }
-            } while (opt != "X");
+            } while (opt != "X" && opt != "x");
         }
     }
 }

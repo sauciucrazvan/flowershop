@@ -56,5 +56,22 @@ namespace Flowershop
         {
             this.employees.Add(e);
         }
+
+        public string FileFormat()
+        {
+            string result = this.name + ";" + this.address + ";" + this.phone + "\n";
+            
+            foreach (Flower f in this.stock)
+            {
+                result += f.FileFormat() + "\n";
+            }
+
+            foreach (Employee e in this.employees)
+            {
+                result += e.FileFormat() + "\n";
+            }
+            
+            return result;
+        }
     }
 }
