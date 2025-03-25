@@ -7,7 +7,11 @@ namespace Flowershop
     {
         static void Main(string[] args)
         {
-            FileManagement fileManagement = new FileManagement("flowershop.txt");
+            string fileName = "flowershop.txt";
+            if (args.Length != 0)
+                fileName = args[0];
+
+            FileManagement fileManagement = new FileManagement(fileName);
             Flowershop shop = fileManagement.LoadFlowershop();
 
             string opt;
