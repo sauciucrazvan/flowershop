@@ -25,16 +25,20 @@ namespace Interface
 
             groupBox2.Hide();
             groupBox3.Hide();
+            groupBox4.Hide();
 
             flowershop_name.Text = shop.name;
             flowershop_details.Text = shop.toString();
             data.Text = "";
+
+            label8.Text = Flower.showFlowerTypes();
         }
 
         private void btnShowEmployees_Click(object sender, System.EventArgs e)
         {
             groupBox2.Show();
             groupBox3.Hide();
+            groupBox4.Hide();
 
             data.Text = shop.showEmployees();
         }
@@ -43,6 +47,7 @@ namespace Interface
         {
             groupBox2.Show();
             groupBox3.Hide();
+            groupBox4.Hide();
 
             data.Text = shop.showStock();
         }
@@ -51,7 +56,7 @@ namespace Interface
         {
             groupBox2.Hide();
             groupBox3.Show();
-
+            groupBox4.Hide();
         }
 
         private void button1_Click(object sender, System.EventArgs e)
@@ -78,6 +83,67 @@ namespace Interface
             shop.AddEmployee(new Employee(name, address, phone, email, salary));
             fileManagement.AddEmployee(new Employee(name, address, phone, email, salary));
 
+        }
+
+        private void btnAddFlower_Click(object sender, EventArgs e)
+        {
+            groupBox2.Hide();
+            groupBox3.Show();
+            groupBox4.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string typeStr = textBox10.Text, color = textBox9.Text, priceStr = textBox8.Text, quantityStr = textBox7.Text;
+
+            if (typeStr == "" || color == "" || priceStr == "" || quantityStr == "")
+            {
+                MessageBox.Show("Please fill in all fields!");
+                return;
+            }
+
+            if (!double.TryParse(priceStr, out double res))
+            {
+                MessageBox.Show("Price must be a number!");
+                return;
+            }
+
+            if (!Int32.TryParse(quantityStr, out int m))
+            {
+                MessageBox.Show("Quantity must be a number!");
+                return;
+            }
+
+            int type = Convert.ToInt32(typeStr);
+
+            if (type < 1 || type > 13)
+            {
+                MessageBox.Show("Invalid flower type!");
+                return;
+            }
+
+            double price = Convert.ToDouble(priceStr);
+
+            if (price < 0)
+            {
+                MessageBox.Show("Price must be a positive number!");
+                return;
+            }
+
+            int quantity = Convert.ToInt32(quantityStr);
+
+            if (quantity < 0)
+            {
+                MessageBox.Show("Quantity must be a positive number!");
+                return;
+            }
+
+            textBox10.Text = textBox9.Text = textBox8.Text = textBox7.Text = "";
+
+            MessageBox.Show("Flower added successfully!");
+
+            shop.AddFlower(new Flower((FlowerTypes)type, color, price, quantity));
+            fileManagement.AddFlower(new Flower((FlowerTypes)type, color, price, quantity));
         }
     }
 }

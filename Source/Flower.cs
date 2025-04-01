@@ -59,5 +59,6 @@ namespace Flowershop
         }
 
         public static void DisplayFlowerTypes() => Console.WriteLine("Types: Rose (1), Tulip (2), Lily (3), Orchid (4), Sunflower (5), Daisy (6), Daffodil (7), Peony (8), Iris (9), Lavender (10), Lilac (11), Poppy (12), Dahlia (13)\n");
+        public static string showFlowerTypes() => "Types:\nRose (1), Tulip (2), Lily (3),\nOrchid (4), Sunflower (5), Daisy (6),\nDaffodil (7), Peony (8), Iris (9),\nLavender (10), Lilac (11), Poppy (12),\nDahlia (13)\n";
     }
 }

@@ -1,6 +1,7 @@
-Floraria Florilor
-str Mihai cel Viteaz, nr 29
-07839109111
-Tupac Shakur;str REDACTED, nr -1;07redacted;redacted@gmail.com;1300
-Mike Shinoda;str EDACTED, nr -1;07redacted;redacted@gmail.com;2000
-1;Red;7.99;1200
+Floraria
+str REDACTED, nr -1
+07redacted
+Tester 1;str REDACTED, nr -1;07redacted;redacted@gmail.com;1300
+Tester 2;str REDACTED, nr -1;07redacted;redacted@gmail.com;2000
+1;Red;7.99;120012;Red;999.99;1
+12;Yellow;10.99;1001
