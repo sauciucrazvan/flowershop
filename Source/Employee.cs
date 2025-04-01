@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Flowershop
 {
-    class Employee
+    public class Employee
     {
         // full name, phone number, email, salary, address
         public string name { get; set; }
@@ -36,6 +32,11 @@ namespace Flowershop
         public void Display()
         {
             Console.WriteLine("Name: " + this.name + "\t\t Address: " + this.address + "\t Phone: " + this.phone + "\nEmail: " + this.email + "\t Salary: " + this.salary + " RON");
+        }
+
+        public string toString()
+        {
+            return "Name: " + this.name + " \t\t Address: " + this.address + "\nPhone: " + this.phone + "\t\t Email: " + this.email + "\nSalary: " + this.salary + " RON";
         }
 
         public string FileFormat()

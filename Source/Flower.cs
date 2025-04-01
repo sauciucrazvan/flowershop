@@ -48,6 +48,11 @@ namespace Flowershop
             Console.WriteLine(this.type + " | Color: " + this.color + " | Price: " + this.price + " RON | Quantity: " + this.quantity);
         }
 
+        public string toString()
+        {
+            return this.type + " | Color: " + this.color + " | Price: " + this.price + " RON | Quantity: " + this.quantity;
+        }
+
         public string FileFormat()
         {
             return (int) this.type + ";" + this.color + ";" + this.price + ";" + this.quantity;

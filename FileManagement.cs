@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Flowershop
 {
-    internal class FileManagement
+    public class FileManagement
     {
         private string numeFisier;
         public FileManagement(string numeFisier)

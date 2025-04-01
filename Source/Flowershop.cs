@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Flowershop
 {
-    class Flowershop
+    public class Flowershop
     {
         // shop name, address, phone number, stock of flowers, employees
         public string name { get; set; }
@@ -39,12 +37,32 @@ namespace Flowershop
             }
         }
 
+        public string showStock()
+        {
+            string result = "";
+            foreach (Flower f in this.stock)
+            {
+                result += f.toString() + "\n";
+            }
+            return string.IsNullOrEmpty(result) ? "No stock available." : result;
+        }
+
         public void DisplayEmployees()
         {
             foreach (Employee e in this.employees)
             {
                 e.Display();
             }
+        }
+
+        public string showEmployees()
+        {
+            string result = "";
+            foreach (Employee e in this.employees)
+            {
+                result += e.toString() + "\n\n";
+            }
+            return string.IsNullOrEmpty(result) ? "No employees saved." : result;
         }
 
         public void AddFlower(Flower f)
@@ -72,6 +90,16 @@ namespace Flowershop
             }
             
             return result;
+        }
+
+        public string toString()
+        {
+            if (string.IsNullOrEmpty(this.name) || string.IsNullOrEmpty(this.address) || string.IsNullOrEmpty(this.phone))
+            {
+                return "No shop information available.";
+            }
+
+            return this.address + "\n" + this.phone;
         }
     }
 }

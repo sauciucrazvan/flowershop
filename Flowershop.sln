@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flowershop", "Flowershop.csproj", "{5A1A52B9-EC8F-4C10-B755-30CFD6D7C7A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{21558747-1894-4BE6-935D-39E411C4B5CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5A1A52B9-EC8F-4C10-B755-30CFD6D7C7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A1A52B9-EC8F-4C10-B755-30CFD6D7C7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A1A52B9-EC8F-4C10-B755-30CFD6D7C7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21558747-1894-4BE6-935D-39E411C4B5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21558747-1894-4BE6-935D-39E411C4B5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21558747-1894-4BE6-935D-39E411C4B5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21558747-1894-4BE6-935D-39E411C4B5CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
