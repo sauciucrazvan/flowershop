@@ -21,6 +21,13 @@ namespace Interface
             fileManagement = new FileManagement(fileLoc + "\\flowershop.txt");
             shop = fileManagement.LoadFlowershop();
 
+            if (shop == null)
+            {
+                MessageBox.Show("Failed to load the flowershop. Please check the file or data.");
+                return;
+            }
+
+
             InitializeComponent();
 
             groupBox2.Hide();
@@ -36,20 +43,26 @@ namespace Interface
 
         private void btnShowEmployees_Click(object sender, System.EventArgs e)
         {
-            groupBox2.Show();
-            groupBox3.Hide();
-            groupBox4.Hide();
+            //groupBox2.Show();
+            //groupBox3.Hide();
+            //groupBox4.Hide();
 
-            data.Text = shop.showEmployees();
+            //data.Text = shop.showEmployees();
+            Show_Employees showEmployees = new Show_Employees(shop);
+            showEmployees.Show();
+
         }
 
         private void btnShowStock_Click(object sender, System.EventArgs e)
         {
-            groupBox2.Show();
-            groupBox3.Hide();
-            groupBox4.Hide();
+            //groupBox2.Show();
+            //groupBox3.Hide();
+            //groupBox4.Hide();
 
-            data.Text = shop.showStock();
+            //data.Text = shop.showStock();
+
+            Show_Stock show_Stock = new Show_Stock(shop);
+            show_Stock.Show();
         }
 
         private void btnAddEmployee_Click(object sender, System.EventArgs e)

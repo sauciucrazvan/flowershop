@@ -36,7 +36,7 @@ namespace Flowershop
 
         public string toString()
         {
-            return "Name: " + this.name + " \t\t Address: " + this.address + "\nPhone: " + this.phone + "\t\t Email: " + this.email + "\nSalary: " + this.salary + " RON";
+            return "• Name: " + this.name + " \tAddress: " + this.address + "\tPhone: " + this.phone + "\n   Email: " + this.email + "\tSalary: " + this.salary + " RON";
         }
 
         public string FileFormat()
