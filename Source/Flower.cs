@@ -21,7 +21,7 @@ namespace Flowershop
     }
     public class Flower
     {
-        // type, price, color, quantity
+        // type\nprice\ncolor\nquantity
 
         public FlowerTypes type { get; set; }
         public string color { get; set; }
@@ -58,7 +58,7 @@ namespace Flowershop
             return (int) this.type + ";" + this.color + ";" + this.price + ";" + this.quantity;
         }
 
-        public static void DisplayFlowerTypes() => Console.WriteLine("Types: Rose (1), Tulip (2), Lily (3), Orchid (4), Sunflower (5), Daisy (6), Daffodil (7), Peony (8), Iris (9), Lavender (10), Lilac (11), Poppy (12), Dahlia (13)\n");
-        public static string showFlowerTypes() => "Types:\nRose (1), Tulip (2), Lily (3),\nOrchid (4), Sunflower (5), Daisy (6),\nDaffodil (7), Peony (8), Iris (9),\nLavender (10), Lilac (11), Poppy (12),\nDahlia (13)\n";
+        public static void DisplayFlowerTypes() => Console.WriteLine("Types: Rose (1)\nTulip (2)\nLily (3)\nOrchid (4)\nSunflower (5)\nDaisy (6)\nDaffodil (7)\nPeony (8)\nIris (9)\nLavender (10)\nLilac (11)\nPoppy (12)\nDahlia (13)\n");
+        public static string showFlowerTypes() => "Types:\nRose (1)\nTulip (2)\nLily (3),\nOrchid (4)\nSunflower (5)\nDaisy (6),\nDaffodil (7)\nPeony (8)\nIris (9),\nLavender (10)\nLilac (11)\nPoppy (12),\nDahlia (13)\n";
     }
 }

@@ -71,6 +71,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Search_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Employee.Designer.cs">
+      <DependentUpon>Search_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search_Flower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search_Flower.Designer.cs">
+      <DependentUpon>Search_Flower.cs</DependentUpon>
+    </Compile>
     <Compile Include="Show_Employees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +108,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Employee.resx">
+      <DependentUpon>Search_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search_Flower.resx">
+      <DependentUpon>Search_Flower.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Show_Employees.resx">
       <DependentUpon>Show_Employees.cs</DependentUpon>

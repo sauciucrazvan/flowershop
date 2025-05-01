@@ -60,6 +60,16 @@ namespace Interface
             addFlower.Show();
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Search_Employee searchEmployee = new Search_Employee(shop);
+            searchEmployee.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Search_Flower searchFlower = new Search_Flower(shop);
+            searchFlower.Show();
+        }
     }
 }

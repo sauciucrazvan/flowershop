@@ -15,6 +15,9 @@ namespace Interface
     {
         Flowershop.Flowershop _shop;
         FileManagement _fileManagement;
+
+        String selectedColor;
+
         public Add_Flower(Flowershop.Flowershop shop, FileManagement fileManagement)
         {
             InitializeComponent();
@@ -27,7 +30,7 @@ namespace Interface
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string typeStr = textBox10.Text, color = textBox9.Text, priceStr = textBox8.Text, quantityStr = textBox7.Text;
+            string typeStr = textBox10.Text, color = selectedColor, priceStr = textBox8.Text, quantityStr = textBox7.Text;
 
             if (typeStr == "" || color == "" || priceStr == "" || quantityStr == "")
             {
@@ -71,12 +74,34 @@ namespace Interface
                 return;
             }
 
-            textBox10.Text = textBox9.Text = textBox8.Text = textBox7.Text = "";
+            textBox10.Text = textBox8.Text = textBox7.Text = "";
 
             MessageBox.Show("Flower added successfully!");
 
             _shop.AddFlower(new Flower((FlowerTypes)type, color, price, quantity));
             _fileManagement.AddFlower(new Flower((FlowerTypes)type, color, price, quantity));
+        }
+
+        private void CheckChanged(object sender, EventArgs e)
+        {
+            if (sender is RadioButton rbControl)
+            {
+                if (rbControl.Checked)
+                {
+                    selectedColor = rbControl.Text;
+                }
+                else
+                {
+                    if (selectedColor == rbControl.Text)
+                    {
+                        selectedColor = "";
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid control triggered the event.");
+            }
         }
     }
 }
