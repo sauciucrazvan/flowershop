@@ -1,10 +1,10 @@
 Floraria Dumbraveni
-str Veresti, nr -1
+str Principala, nr -1
 0799999999
 Tester 1;str Veresti, nr -1;0711111111;tester1@gmail.com;1300
 Tester 2;str Veresti, nr -1;0722222222;tester2@gmail.com;2000
 1;red;7.99;120012;Red;999.99;1
 12;yellow;10.99;1001
 Tester 3;-;-;-;2011
-4;orange;1211;111
 1;red;5555;11111
+5;orange;1211;111
