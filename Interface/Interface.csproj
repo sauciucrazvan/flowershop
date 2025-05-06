@@ -95,6 +95,18 @@
     <Compile Include="Show_Stock.Designer.cs">
       <DependentUpon>Show_Stock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Updated_Selected_Flower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updated_Selected_Flower.Designer.cs">
+      <DependentUpon>Updated_Selected_Flower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Flower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Flower.Designer.cs">
+      <DependentUpon>Update_Flower.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_Employee.resx">
       <DependentUpon>Add_Employee.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +132,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Show_Stock.resx">
       <DependentUpon>Show_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updated_Selected_Flower.resx">
+      <DependentUpon>Updated_Selected_Flower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Flower.resx">
+      <DependentUpon>Update_Flower.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

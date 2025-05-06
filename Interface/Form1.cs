@@ -1,15 +1,10 @@
 ﻿using Flowershop;
 using System;
 using System.IO;
-using System.Net;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using System.Xml.Linq;
-using System.Threading.Tasks;
 
 namespace Interface
 {
-    
     public partial class Form1 : Form
     {
         FileManagement fileManagement;
@@ -70,6 +65,12 @@ namespace Interface
         {
             Search_Flower searchFlower = new Search_Flower(shop);
             searchFlower.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Update_Flower updateFlower = new Update_Flower(shop, fileManagement);
+            updateFlower.Show();
         }
     }
 }

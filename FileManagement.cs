@@ -34,6 +34,38 @@ namespace Flowershop
             }
         }
 
+        public void RemoveFlower(Flower f)
+        {
+            List<string> lines = new List<string>();
+            using (StreamReader srFisierText = new StreamReader(numeFisier))
+            {
+                string linie;
+                while ((linie = srFisierText.ReadLine()) != null)
+                {
+                    string[] date = linie.Split(';');
+                    if (date.Length == 4) // Flower
+                    {
+                        Flower flower = new Flower((FlowerTypes)Convert.ToInt32(date[0]), date[1], Convert.ToDouble(date[2]), Convert.ToInt32(date[3]));
+                        if (flower.type != f.type || flower.color != f.color || flower.price != f.price || flower.quantity != f.quantity)
+                        {
+                            lines.Add(linie);
+                        }
+                    }
+                    else
+                    {
+                        lines.Add(linie);
+                    }
+                }
+            }
+            using (StreamWriter swFisierText = new StreamWriter(numeFisier))
+            {
+                foreach (string line in lines)
+                {
+                    swFisierText.WriteLine(line);
+                }
+            }
+        }
+
         public void ReadEmployees(List<Employee> employees)
         {
             using (StreamReader srFisierText = new StreamReader(numeFisier))

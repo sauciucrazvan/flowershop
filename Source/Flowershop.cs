@@ -70,6 +70,11 @@ namespace Flowershop
             this.stock.Add(f);
         }
 
+        public void RemoveFlower(Flower f)
+        {
+            this.stock.Remove(f);
+        }
+
         public void AddEmployee(Employee e)
         {
             this.employees.Add(e);
