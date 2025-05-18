@@ -30,17 +30,10 @@ namespace Interface
 
         }
 
-        private void btnShowEmployees_Click(object sender, System.EventArgs e)
-        {
-            Show_Employees showEmployees = new Show_Employees(shop);
-            showEmployees.Show();
-
-        }
-
         private void btnShowStock_Click(object sender, System.EventArgs e)
         {
-            Show_Stock show_Stock = new Show_Stock(shop);
-            show_Stock.Show();
+            view_data view_Data = new view_data(shop);
+            view_Data.Show();
         }
 
         private void btnAddEmployee_Click(object sender, System.EventArgs e)
@@ -57,14 +50,14 @@ namespace Interface
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Search_Employee searchEmployee = new Search_Employee(shop);
-            searchEmployee.Show();
+            //Search_Employee searchEmployee = new Search_Employee(shop);
+            //searchEmployee.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Search_Flower searchFlower = new Search_Flower(shop);
-            searchFlower.Show();
+            //Search_Flower searchFlower = new Search_Flower(shop);
+            //searchFlower.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

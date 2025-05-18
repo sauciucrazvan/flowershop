@@ -30,7 +30,6 @@
         {
             this.flowershop_details = new System.Windows.Forms.Label();
             this.btnShowStock = new System.Windows.Forms.Button();
-            this.btnShowEmployees = new System.Windows.Forms.Button();
             this.flowershop_name = new System.Windows.Forms.Label();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.btnAddFlower = new System.Windows.Forms.Button();
@@ -38,8 +37,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,21 +59,11 @@
             // 
             this.btnShowStock.Location = new System.Drawing.Point(412, 151);
             this.btnShowStock.Name = "btnShowStock";
-            this.btnShowStock.Size = new System.Drawing.Size(200, 49);
+            this.btnShowStock.Size = new System.Drawing.Size(406, 49);
             this.btnShowStock.TabIndex = 3;
-            this.btnShowStock.Text = "Show Stock";
+            this.btnShowStock.Text = "View Data";
             this.btnShowStock.UseVisualStyleBackColor = true;
             this.btnShowStock.Click += new System.EventHandler(this.btnShowStock_Click);
-            // 
-            // btnShowEmployees
-            // 
-            this.btnShowEmployees.Location = new System.Drawing.Point(618, 151);
-            this.btnShowEmployees.Name = "btnShowEmployees";
-            this.btnShowEmployees.Size = new System.Drawing.Size(200, 49);
-            this.btnShowEmployees.TabIndex = 1;
-            this.btnShowEmployees.Text = "Show Employees";
-            this.btnShowEmployees.UseVisualStyleBackColor = true;
-            this.btnShowEmployees.Click += new System.EventHandler(this.btnShowEmployees_Click);
             // 
             // flowershop_name
             // 
@@ -150,7 +139,6 @@
             this.groupBox1.Controls.Add(this.btnAddFlower);
             this.groupBox1.Controls.Add(this.btnAddEmployee);
             this.groupBox1.Controls.Add(this.flowershop_name);
-            this.groupBox1.Controls.Add(this.btnShowEmployees);
             this.groupBox1.Controls.Add(this.btnShowStock);
             this.groupBox1.Controls.Add(this.flowershop_details);
             this.groupBox1.Location = new System.Drawing.Point(12, 13);
@@ -158,16 +146,6 @@
             this.groupBox1.Size = new System.Drawing.Size(974, 506);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Interface.Properties.Resources.Screenshot_2025_05_06_111920;
-            this.pictureBox1.Location = new System.Drawing.Point(182, 111);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 141);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -181,6 +159,16 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Manage the flowershop\'s data";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Interface.Properties.Resources.Screenshot_2025_05_06_111920;
+            this.pictureBox1.Location = new System.Drawing.Point(182, 111);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(219, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -203,7 +191,6 @@
 
         private System.Windows.Forms.Label flowershop_details;
         private System.Windows.Forms.Button btnShowStock;
-        private System.Windows.Forms.Button btnShowEmployees;
         private System.Windows.Forms.Label flowershop_name;
         private System.Windows.Forms.Button btnAddEmployee;
         private System.Windows.Forms.Button btnAddFlower;

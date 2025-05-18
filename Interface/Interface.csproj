@@ -71,30 +71,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Search_Employee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Search_Employee.Designer.cs">
-      <DependentUpon>Search_Employee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Search_Flower.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Search_Flower.Designer.cs">
-      <DependentUpon>Search_Flower.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Show_Employees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Show_Employees.Designer.cs">
-      <DependentUpon>Show_Employees.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Show_Stock.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Show_Stock.Designer.cs">
-      <DependentUpon>Show_Stock.cs</DependentUpon>
-    </Compile>
     <Compile Include="Updated_Selected_Flower.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +82,12 @@
     </Compile>
     <Compile Include="Update_Flower.Designer.cs">
       <DependentUpon>Update_Flower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_data.Designer.cs">
+      <DependentUpon>view_data.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Add_Employee.resx">
       <DependentUpon>Add_Employee.cs</DependentUpon>
@@ -121,23 +103,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Search_Employee.resx">
-      <DependentUpon>Search_Employee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Search_Flower.resx">
-      <DependentUpon>Search_Flower.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Show_Employees.resx">
-      <DependentUpon>Show_Employees.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Show_Stock.resx">
-      <DependentUpon>Show_Stock.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Updated_Selected_Flower.resx">
       <DependentUpon>Updated_Selected_Flower.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update_Flower.resx">
       <DependentUpon>Update_Flower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_data.resx">
+      <DependentUpon>view_data.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
