@@ -61,17 +61,17 @@
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox3.Location = new System.Drawing.Point(149, 13);
+            this.groupBox3.Location = new System.Drawing.Point(12, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(503, 425);
+            this.groupBox3.Size = new System.Drawing.Size(232, 462);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(406, 377);
+            this.button1.Location = new System.Drawing.Point(20, 401);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 33);
+            this.button1.Size = new System.Drawing.Size(188, 33);
             this.button1.TabIndex = 17;
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
@@ -186,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(250, 482);
             this.Controls.Add(this.groupBox3);
             this.Name = "Add_Employee";
             this.Text = "Add_Employee";

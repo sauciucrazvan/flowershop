@@ -46,6 +46,8 @@ namespace Interface
 
             _shop.AddEmployee(new Employee(name, address, phone, email, salary));
             _fileManagement.AddEmployee(new Employee(name, address, phone, email, salary));
+
+            this.Close();
         }
     }
 }

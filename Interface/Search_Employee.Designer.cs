@@ -38,12 +38,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(316, 36);
+            this.label2.Size = new System.Drawing.Size(316, 32);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Searching: Employee";
+            this.label2.Text = "Searching: employees";
             // 
             // textBox1
             // 
@@ -54,9 +54,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 92);
+            this.button1.Location = new System.Drawing.Point(18, 101);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(310, 31);
+            this.button1.Size = new System.Drawing.Size(310, 33);
             this.button1.TabIndex = 8;
             this.button1.Text = "Find by name";
             this.button1.UseVisualStyleBackColor = true;
@@ -68,9 +68,8 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(20, 145);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 32);
+            this.label1.Size = new System.Drawing.Size(0, 32);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Searching for: {query}";
             // 
             // label3
             // 
@@ -84,7 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(346, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);

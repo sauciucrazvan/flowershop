@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Flowershop;
 
@@ -134,6 +127,7 @@ namespace Interface
             fileManagement.AddFlower(new Flower((FlowerTypes)type, selectedColor, price, quantity));
 
             MessageBox.Show("Flower updated successfully!");
+            this.Close();
         }
     }
 }

@@ -274,15 +274,15 @@
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.Location = new System.Drawing.Point(16, 22);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(101, 20);
+            this.label14.Size = new System.Drawing.Size(163, 20);
             this.label14.TabIndex = 2;
-            this.label14.Text = "Add a flower!";
+            this.label14.Text = "Adding a new flower...";
             // 
             // Add_Flower
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(287, 530);
+            this.ClientSize = new System.Drawing.Size(287, 502);
             this.Controls.Add(this.groupBox4);
             this.Name = "Add_Flower";
             this.Text = "Add_Flower";
