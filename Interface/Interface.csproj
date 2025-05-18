@@ -71,6 +71,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="search_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_data.Designer.cs">
+      <DependentUpon>search_data.cs</DependentUpon>
+    </Compile>
     <Compile Include="Updated_Selected_Flower.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_data.resx">
+      <DependentUpon>search_data.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Updated_Selected_Flower.resx">
       <DependentUpon>Updated_Selected_Flower.cs</DependentUpon>

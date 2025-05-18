@@ -52,6 +52,8 @@ namespace Interface
         {
             //Search_Employee searchEmployee = new Search_Employee(shop);
             //searchEmployee.Show();
+            search_data search_Data = new search_data(shop);
+            search_Data.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
