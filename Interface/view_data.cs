@@ -52,5 +52,33 @@ namespace Interface
             }
 
         }
+
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
+            dataGridView2.Rows.Clear();
+
+            //Add every flower to the data view grid list
+            foreach (var flower in shop.stock)
+            {
+                dataGridView1.Rows.Add(
+                    flower.type,
+                    flower.price + " RON",
+                    flower.color,
+                    flower.quantity);
+            }
+
+            //Add every employee to the data view grid list
+            foreach (var employee in shop.employees)
+            {
+                dataGridView2.Rows.Add(
+                    employee.name,
+                    employee.salary + " RON",
+                    employee.phone,
+                    employee.address,
+                    employee.email
+                    );
+            }
+        }
     }
 }

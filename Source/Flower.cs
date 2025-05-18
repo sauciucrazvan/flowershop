@@ -50,7 +50,7 @@ namespace Flowershop
 
         public string toString()
         {
-            return "• " + this.type + "   Color: " + this.color + "   Price: " + this.price + " RON   Quantity: " + this.quantity;
+            return "• " + this.type + " [color: " + this.color + ", price: " + this.price + " RON, quantity: " + this.quantity + "]";
         }
 
         public string FileFormat()

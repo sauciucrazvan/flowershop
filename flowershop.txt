@@ -6,6 +6,6 @@ Tester 2;str Veresti, nr -1;0722222222;tester2@gmail.com;2000
 1;red;7.99;120012;Red;999.99;1
 Tester 3;-;-;-;2011
 5;red;1211;111
-12;gray;11;1001
-1;red;100;11111
-12;blue;22;8
+2;gray;11;1001
+5;orange;100;11111
+12;black;22;8

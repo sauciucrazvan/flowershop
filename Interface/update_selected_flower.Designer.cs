@@ -1,6 +1,6 @@
 ﻿namespace Interface
 {
-    partial class Updated_Selected_Flower
+    partial class update_selected_flower
     {
         /// <summary>
         /// Required designer variable.

@@ -4,7 +4,7 @@ using Flowershop;
 
 namespace Interface
 {
-    public partial class Updated_Selected_Flower : Form
+    public partial class update_selected_flower : Form
     {
         private Flowershop.Flowershop shop;
         private FileManagement fileManagement;
@@ -12,7 +12,7 @@ namespace Interface
 
         String selectedColor = "";
 
-        public Updated_Selected_Flower(Flowershop.Flowershop _shop, FileManagement _fileManagement, Flower _flower)
+        public update_selected_flower(Flowershop.Flowershop _shop, FileManagement _fileManagement, Flower _flower)
         {
             this.shop = _shop;
             this.fileManagement = _fileManagement;

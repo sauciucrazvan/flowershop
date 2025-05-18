@@ -58,11 +58,11 @@
     <Compile Include="Add_Flower.Designer.cs">
       <DependentUpon>Add_Flower.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,17 +77,17 @@
     <Compile Include="search_data.Designer.cs">
       <DependentUpon>search_data.cs</DependentUpon>
     </Compile>
-    <Compile Include="Updated_Selected_Flower.cs">
+    <Compile Include="update_selected_flower.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Updated_Selected_Flower.Designer.cs">
-      <DependentUpon>Updated_Selected_Flower.cs</DependentUpon>
+    <Compile Include="update_selected_flower.Designer.cs">
+      <DependentUpon>update_selected_flower.cs</DependentUpon>
     </Compile>
-    <Compile Include="Update_Flower.cs">
+    <Compile Include="update_flowers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Update_Flower.Designer.cs">
-      <DependentUpon>Update_Flower.cs</DependentUpon>
+    <Compile Include="update_flowers.Designer.cs">
+      <DependentUpon>update_flowers.cs</DependentUpon>
     </Compile>
     <Compile Include="view_data.cs">
       <SubType>Form</SubType>
@@ -101,8 +101,8 @@
     <EmbeddedResource Include="Add_Flower.resx">
       <DependentUpon>Add_Flower.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,11 +112,11 @@
     <EmbeddedResource Include="search_data.resx">
       <DependentUpon>search_data.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Updated_Selected_Flower.resx">
-      <DependentUpon>Updated_Selected_Flower.cs</DependentUpon>
+    <EmbeddedResource Include="update_selected_flower.resx">
+      <DependentUpon>update_selected_flower.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Update_Flower.resx">
-      <DependentUpon>Update_Flower.cs</DependentUpon>
+    <EmbeddedResource Include="update_flowers.resx">
+      <DependentUpon>update_flowers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view_data.resx">
       <DependentUpon>view_data.cs</DependentUpon>

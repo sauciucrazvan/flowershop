@@ -5,12 +5,12 @@ using System.Windows.Forms;
 
 namespace Interface
 {
-    public partial class Form1 : Form
+    public partial class dashboard : Form
     {
         FileManagement fileManagement;
         Flowershop.Flowershop shop;
 
-        public Form1()
+        public dashboard()
         {
             string fileLoc = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
             fileManagement = new FileManagement(fileLoc + "\\flowershop.txt");
@@ -64,7 +64,7 @@ namespace Interface
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Update_Flower updateFlower = new Update_Flower(shop, fileManagement);
+            update_flowers updateFlower = new update_flowers(shop, fileManagement);
             updateFlower.Show();
         }
     }
