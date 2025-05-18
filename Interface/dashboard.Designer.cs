@@ -43,8 +43,9 @@
             // flowershop_details
             // 
             this.flowershop_details.AutoSize = true;
+            this.flowershop_details.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.flowershop_details.ForeColor = System.Drawing.Color.Black;
-            this.flowershop_details.Location = new System.Drawing.Point(178, 258);
+            this.flowershop_details.Location = new System.Drawing.Point(17, 405);
             this.flowershop_details.Name = "flowershop_details";
             this.flowershop_details.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.flowershop_details.Size = new System.Drawing.Size(141, 20);
@@ -54,7 +55,7 @@
             // 
             // btnShowStock
             // 
-            this.btnShowStock.Location = new System.Drawing.Point(412, 151);
+            this.btnShowStock.Location = new System.Drawing.Point(259, 28);
             this.btnShowStock.Name = "btnShowStock";
             this.btnShowStock.Size = new System.Drawing.Size(265, 49);
             this.btnShowStock.TabIndex = 3;
@@ -65,29 +66,29 @@
             // flowershop_name
             // 
             this.flowershop_name.AutoSize = true;
-            this.flowershop_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowershop_name.ForeColor = System.Drawing.Color.Fuchsia;
-            this.flowershop_name.Location = new System.Drawing.Point(407, 111);
+            this.flowershop_name.Font = new System.Drawing.Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flowershop_name.ForeColor = System.Drawing.Color.Goldenrod;
+            this.flowershop_name.Location = new System.Drawing.Point(14, 361);
             this.flowershop_name.Name = "flowershop_name";
             this.flowershop_name.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.flowershop_name.Size = new System.Drawing.Size(270, 37);
+            this.flowershop_name.Size = new System.Drawing.Size(178, 24);
             this.flowershop_name.TabIndex = 4;
             this.flowershop_name.Text = "flowershop_name";
             this.flowershop_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Location = new System.Drawing.Point(182, 51);
+            this.btnAddEmployee.Location = new System.Drawing.Point(261, 138);
             this.btnAddEmployee.Name = "btnAddEmployee";
-            this.btnAddEmployee.Size = new System.Drawing.Size(190, 35);
+            this.btnAddEmployee.Size = new System.Drawing.Size(263, 49);
             this.btnAddEmployee.TabIndex = 5;
-            this.btnAddEmployee.Text = "Add new entries...";
+            this.btnAddEmployee.Text = "Add New Entries";
             this.btnAddEmployee.UseVisualStyleBackColor = true;
             this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(412, 206);
+            this.button1.Location = new System.Drawing.Point(259, 83);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(265, 49);
             this.button1.TabIndex = 7;
@@ -97,7 +98,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(412, 261);
+            this.button3.Location = new System.Drawing.Point(261, 193);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(265, 49);
             this.button3.TabIndex = 9;
@@ -117,16 +118,16 @@
             this.groupBox1.Controls.Add(this.flowershop_details);
             this.groupBox1.Location = new System.Drawing.Point(12, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(974, 506);
+            this.groupBox1.Size = new System.Drawing.Size(542, 506);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Interface.Properties.Resources.Screenshot_2025_05_06_111920;
-            this.pictureBox1.Location = new System.Drawing.Point(182, 111);
+            this.pictureBox1.Image = global::Interface.Properties.Resources._2024_07_31;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 141);
+            this.pictureBox1.Size = new System.Drawing.Size(219, 322);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -136,7 +137,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(998, 531);
+            this.ClientSize = new System.Drawing.Size(564, 531);
             this.Controls.Add(this.groupBox1);
             this.Name = "dashboard";
             this.Text = "Flowershop!";

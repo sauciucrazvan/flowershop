@@ -104,7 +104,7 @@ namespace Flowershop
                 return "No shop information available.";
             }
 
-            return "Address: " + this.address + " | Phone number: +" + this.phone;
+            return "Address: " + this.address + "\nPhone number: +" + this.phone;
         }
     }
 }

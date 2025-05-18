@@ -26,6 +26,7 @@ namespace Interface
             InitializeComponent();
 
             flowershop_name.Text = shop.name;
+            this.Text = "Dashboard - " + shop.name;
             flowershop_details.Text = shop.toString();
 
         }
