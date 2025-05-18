@@ -23,9 +23,6 @@ namespace Interface
             InitializeComponent();
             _shop = shop;
             _fileManagement = fileManagement;
-
-            label8.Text = Flower.showFlowerTypes();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -50,9 +47,7 @@ namespace Interface
                 return;
             }
 
-            int type = Convert.ToInt32(typeStr);
-
-            if (type < 1 || type > 13)
+            if (!Enum.TryParse(typeStr, out FlowerTypes type))
             {
                 MessageBox.Show("Invalid flower type!");
                 return;

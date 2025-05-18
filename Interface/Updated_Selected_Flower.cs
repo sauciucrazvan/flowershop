@@ -28,9 +28,7 @@ namespace Interface
 
             InitializeComponent();
 
-            label8.Text = Flower.showFlowerTypes();
-
-            textBox10.Text = Convert.ToInt32(flower.type).ToString();
+            textBox10.Text = flower.type.ToString();
             textBox8.Text = Convert.ToInt32(flower.price).ToString();
             textBox7.Text = flower.quantity.ToString();
             selectedColor = flower.color;
@@ -110,8 +108,8 @@ namespace Interface
                 return;
             }
 
-            int type = Convert.ToInt32(textBox10.Text);
-            if (type < 1 || type > 13)
+            // check if its a valid flowertype
+            if (!Enum.TryParse(textBox10.Text, out FlowerTypes type))
             {
                 MessageBox.Show("Invalid flower type!");
                 return;
