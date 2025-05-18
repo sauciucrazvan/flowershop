@@ -46,17 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add_Employee.cs">
+    <Compile Include="add_new_entries.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add_Employee.Designer.cs">
-      <DependentUpon>Add_Employee.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Add_Flower.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add_Flower.Designer.cs">
-      <DependentUpon>Add_Flower.cs</DependentUpon>
+    <Compile Include="add_new_entries.Designer.cs">
+      <DependentUpon>add_new_entries.cs</DependentUpon>
     </Compile>
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
@@ -95,11 +89,8 @@
     <Compile Include="view_data.Designer.cs">
       <DependentUpon>view_data.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Add_Employee.resx">
-      <DependentUpon>Add_Employee.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Add_Flower.resx">
-      <DependentUpon>Add_Flower.cs</DependentUpon>
+    <EmbeddedResource Include="add_new_entries.resx">
+      <DependentUpon>add_new_entries.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>

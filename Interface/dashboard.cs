@@ -38,28 +38,14 @@ namespace Interface
 
         private void btnAddEmployee_Click(object sender, System.EventArgs e)
         {
-            Add_Employee addEmployee = new Add_Employee(shop, fileManagement);
-            addEmployee.Show();
-        }
-
-        private void btnAddFlower_Click(object sender, EventArgs e)
-        {
-            Add_Flower addFlower = new Add_Flower(shop, fileManagement);
-            addFlower.Show();
+            add_new_entries addNewEntries = new add_new_entries(shop, fileManagement);
+            addNewEntries.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Search_Employee searchEmployee = new Search_Employee(shop);
-            //searchEmployee.Show();
             search_data search_Data = new search_data(shop);
             search_Data.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //Search_Flower searchFlower = new Search_Flower(shop);
-            //searchFlower.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
